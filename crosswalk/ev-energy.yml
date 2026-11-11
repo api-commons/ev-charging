@@ -1,7 +1,7 @@
 provider: ev-energy
 apis_io: https://apis.io/providers/ev-energy/
 context: ev-charging
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   charger:
     path_segment:

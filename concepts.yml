@@ -55,6 +55,7 @@ findings:
     detail records -- does not appear in this cohort as harvested OpenAPI: no provider here
     publishes an OCPI contract the census can read. The standard exists; its OpenAPI is not in
     the catalog."
+  - "Measured against OCPI 2.2.1, the standard defines all of a charging session's core and every core property of a charger except a display name -- and it defines locations, tariffs and charge detail records that no provider in the cohort publishes as OpenAPI. OCPI is the spine this context lacked; its crosswalk is in standards/."
 decisions:
   - "Only chargers and charging sessions are published; locations, tariffs and charge detail
     records were measured and dropped, and are recorded for the next re-measure."
@@ -63,3 +64,8 @@ decisions:
     models context does for the OpenAI interface -- would give this context its spine. Noted as
     the next step rather than done by hand."
   - "Duplicates merged: Leap into Leapfrog Power."
+
+standards:
+  - standard: ocpi-2.2.1
+    concepts: {charger: [EVSE, Connector], charging_session: [Session]}
+    defines: {charging_location: Location, tariff: Tariff, charge_detail_record: CDR}
