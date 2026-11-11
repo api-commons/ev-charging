@@ -10,6 +10,12 @@ generated. Every number below is a count of providers.
 ## What the market already agrees on
 
 <!-- commons:summary -->
+| Concept | Expose it | Readable schema | Core properties (share) | Collection named |
+| --- | ---: | ---: | --- | --- |
+| charger | 4 | 4 | id 100%, name 75% | chargers 2, connectors 1, evses 1, charge-points 1 |
+| charging_session | 3 | 3 | id 100% | sessions 1, charging_sessions 1, charging-sessions 1 |
+
+Cohort: 41 providers with harvested OpenAPI, 4 crosswalks. Of the providers exposing a charger: 25% create, 75% list, 100% fetch, 50% update, 25% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
