@@ -1,0 +1,175 @@
+context: ev-charging
+name: EV Charging
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - EV Charging
+  - Electric Vehicles
+  - E-Mobility
+  - eMobility
+  - Charging Infrastructure
+  - OCPP
+  - OCPI
+  providers_with_harvested_openapi: 41
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  leapfrog-power:
+  - leap
+shared_specs: {}
+concepts:
+  charger:
+    segments_seen:
+      chargers: 2
+      connectors: 1
+      evses: 1
+      charge-points: 1
+    providers_exposing: 4
+    providers_with_readable_schema: 4
+    operations:
+    - operation: GET item
+      providers: 4
+      share: 1.0
+      tier: core
+    - operation: GET collection
+      providers: 3
+      share: 0.75
+      tier: core
+    - operation: UPDATE item
+      providers: 2
+      share: 0.5
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.25
+      tier: long-tail
+    - operation: POST collection
+      providers: 1
+      share: 0.25
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.25
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 4
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - externalId
+    - name: name
+      tier: core
+      providers: 3
+      share: 0.75
+      type: string
+      spellings:
+      - name
+      - displayName
+    long_tail_count: 44
+    long_tail_sample:
+    - location_id
+    - model
+    - status
+    - adaptors
+    - capabilities
+    - charge_state
+    - charger_type
+    - charging_sub_sessions
+    - confidence
+    - connection_status
+    - connector_type
+    - cpid
+    - ct_clamp
+    - evse_id
+    - firmware_version
+    - information
+    - is_reachable
+    - last_seen_at
+    - latest_status_log
+    - latitude
+    - lifecycle_state
+    - linking_status
+    - lock_mode
+    - longitude
+    - manufacturer
+    - native_connector
+    - network_service_provider
+    - number_of_ports
+    - portal_name
+    - ports
+    - power_sharing
+    - region
+    - scopes
+    - serial_number
+    - source
+    - type
+    - updated_at
+    - user
+    - user_id
+    - vehicle
+  charging_session:
+    segments_seen:
+      sessions: 1
+      charging_sessions: 1
+      charging-sessions: 1
+    providers_exposing: 3
+    providers_with_readable_schema: 3
+    operations:
+    - operation: GET collection
+      providers: 3
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 1
+      share: 0.333
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 3
+      share: 1.0
+      type: string
+      spellings:
+      - id
+    long_tail_count: 32
+    long_tail_sample:
+    - ended_at
+    - location_id
+    - started_at
+    - vehicle
+    - average_demand_kw
+    - charger_id
+    - charging_duration_seconds
+    - charging_end_time
+    - charging_start_time
+    - cost
+    - cost_sum
+    - customer
+    - duration_seconds
+    - energy_delivered_kwh
+    - estimated_savings
+    - evse
+    - from
+    - kw
+    - kwh_sum
+    - max_demand_kw
+    - non_smart_price
+    - ocpp_id_tag
+    - ocpp_transaction_id
+    - organization
+    - port
+    - rfid
+    - soc_end_percent
+    - soc_start_percent
+    - sub_sessions
+    - tags
+    - to
+    - updated_at

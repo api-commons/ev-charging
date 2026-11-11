@@ -1,0 +1,26 @@
+context: ev-charging
+generated: '2026-11-10'
+adopters:
+- provider: enode
+  apis_io: https://apis.io/providers/enode/
+  crosswalk: crosswalk/enode.yml
+  concepts:
+  - charger
+  - charging_session
+- provider: ev-energy
+  apis_io: https://apis.io/providers/ev-energy/
+  crosswalk: crosswalk/ev-energy.yml
+  concepts:
+  - charger
+  - charging_session
+- provider: flipturn
+  apis_io: https://apis.io/providers/flipturn/
+  crosswalk: crosswalk/flipturn.yml
+  concepts:
+  - charger
+  - charging_session
+- provider: monta
+  apis_io: https://apis.io/providers/monta/
+  crosswalk: crosswalk/monta.yml
+  concepts:
+  - charger

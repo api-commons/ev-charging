@@ -1,0 +1,26 @@
+provider: enode
+apis_io: https://apis.io/providers/enode/
+context: ev-charging
+generated: '2026-11-10'
+concepts:
+  charger:
+    path_segment:
+    - chargers
+    properties:
+      id: id
+      name: displayName
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/enode-openapi.json#GET /chargers
+    - openapi/_original/enode-openapi.json#GET /chargers/{chargerId}
+    - openapi/_original/enode-openapi.json#GET /health/chargers
+    - openapi/_original/enode-openapi.json#GET /users/{userId}/chargers
+    - openapi/_original/enode-openapi.json#PUT /chargers/{chargerId}
+  charging_session:
+    path_segment:
+    - sessions
+    properties:
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/enode-openapi.json#GET /users/{userId}/statistics/charging/sessions

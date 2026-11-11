@@ -1,0 +1,24 @@
+provider: flipturn
+apis_io: https://apis.io/providers/flipturn/
+context: ev-charging
+generated: '2026-11-10'
+concepts:
+  charger:
+    path_segment:
+    - chargers
+    properties:
+      id:
+      - id
+      - externalId
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/flipturn-openapi.yml#GET /chargers/{id}
+  charging_session:
+    path_segment:
+    - charging-sessions
+    properties:
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/flipturn-openapi.yml#GET /charging-sessions

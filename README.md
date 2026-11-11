@@ -1,0 +1,54 @@
+# EV Charging
+
+The common EV-charging vocabulary -- the charging locations drivers find, the chargers and connectors at them, the charging sessions drivers start, the tariffs that price them and the charge detail records that bill them -- distilled from the APIs that already exist, the OCPI standard included. Part of [Schema Commons](https://github.com/api-commons/schema-commons),
+published by the [API Commons](https://apicommons.org).
+
+Built from the providers tagged EV Charging, Electric Vehicles, E-Mobility, eMobility, Charging Infrastructure, OCPP, OCPI in [APIs.io](https://apis.io) that
+publish their own OpenAPI. Only harvested contracts count -- nothing API Evangelist
+generated. Every number below is a count of providers.
+
+## What the market already agrees on
+
+<!-- commons:summary -->
+<!-- /commons:summary -->
+
+Shares are of the providers with a readable resource schema for that concept. The
+extended tier and the long tail of every concept are in [profile.yml](profile.yml).
+
+## What the measurement shows
+
+- EV charging publishes the least of any context in the commons: 41 tagged providers, 4 with a charger or session the census can read. Chargers agree on id and name; sessions on an id.
+- OCPI -- the roaming standard that defines locations, EVSEs, sessions, tariffs and charge detail records -- does not appear in this cohort as harvested OpenAPI: no provider here publishes an OCPI contract the census can read. The standard exists; its OpenAPI is not in the catalog.
+
+## Artifacts
+
+- [openapi.yml](openapi.yml) -- OpenAPI 3.1 of the shared operations. No one serves it; it
+  is the shape to map to. Lints clean against the
+  [naming ruleset](https://github.com/api-commons/schema-commons/blob/main/ruleset/schema-commons-naming.yaml).
+- [schema/](schema) -- JSON Schema 2020-12 per concept; each property carries
+  `x-commons-tier`, `x-commons-share`, `x-commons-providers` and the spellings seen.
+- [crosswalk/](crosswalk) -- one per provider, common name -> their name, with the harvested
+  spec and operations each mapping was read from.
+- [adopters.yml](adopters.yml) -- who exposes which concept, linked to their APIs.io page.
+- [concepts.yml](concepts.yml) -- the only hand-written input: concepts, path segments and
+  their qualifiers, aliases, reviewed exclusions, merged duplicates, and the decisions below.
+- [census/](census) -- the cohort and the raw census the profile is built from.
+
+## Decisions
+
+These are calls, not measurements, recorded so they can be revisited as the method matures.
+
+- Only chargers and charging sessions are published; locations, tariffs and charge detail records were measured and dropped, and are recorded for the next re-measure.
+- Chargers cover EVSEs, charge points and charge boxes; sessions are `/charging-sessions`.
+- An OCPI pass -- reading the standard's own module definitions as the reference, as the models context does for the OpenAI interface -- would give this context its spine. Noted as the next step rather than done by hand.
+- Duplicates merged: Leap into Leapfrog Power.
+
+## Rebuild
+
+```bash
+../schema-commons/scripts/run.sh .
+```
+
+## License
+
+Artifacts CC BY-NC-SA 4.0 ([LICENSE](LICENSE)); code Apache 2.0 ([LICENSE-CODE](LICENSE-CODE)).

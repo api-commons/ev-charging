@@ -1,0 +1,48 @@
+aid: common-ev-charging
+name: EV Charging
+type: Common
+description: 'The common EV Charging vocabulary, distilled from the harvested OpenAPI of 41 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- EV Charging
+- Electric Vehicles
+- E-Mobility
+- eMobility
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/ev-charging/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-ev-charging:ev-charging
+  name: Common EV Charging Interface
+  description: The EV Charging interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/ev-charging
+  tags:
+  - EV Charging
+  - Electric Vehicles
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/ev-charging/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/ev-charging/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/ev-charging/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: charger
+    url: https://raw.githubusercontent.com/api-commons/ev-charging/main/schema/charger.json
+  - type: JSONSchema
+    name: charging_session
+    url: https://raw.githubusercontent.com/api-commons/ev-charging/main/schema/charging_session.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/ev-charging/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,727 @@
+{
+ "cohort_size": 41,
+ "unreadable": [],
+ "concepts": {
+  "charger": {
+   "enode": {
+    "segments": [
+     "chargers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "userId": "string",
+     "vendor": "string",
+     "lastSeen": "string",
+     "isReachable": "boolean",
+     "chargeState": "object",
+     "capabilities": "object",
+     "scopes": "array",
+     "information": "object",
+     "locationId": "string",
+     "displayName": "string",
+     "status": "string",
+     "portalName": "string",
+     "linkingStatus": "string"
+    },
+    "evidence": [
+     "openapi/_original/enode-openapi.json#GET /chargers",
+     "openapi/_original/enode-openapi.json#GET /chargers/{chargerId}",
+     "openapi/_original/enode-openapi.json#GET /health/chargers",
+     "openapi/_original/enode-openapi.json#GET /users/{userId}/chargers",
+     "openapi/_original/enode-openapi.json#PUT /chargers/{chargerId}"
+    ]
+   },
+   "ev-energy": {
+    "segments": [
+     "connectors",
+     "evses"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "vehicle": "string",
+     "native_connector": [
+      "string",
+      "null"
+     ],
+     "adaptors": "array",
+     "updated_at": [
+      "string",
+      "null"
+     ],
+     "id": "string",
+     "cpid": "string",
+     "model": null,
+     "user": null,
+     "latest_status_log": null,
+     "ct_clamp": null,
+     "lock_mode": [
+      "string",
+      "null"
+     ],
+     "location": [
+      "object",
+      "null"
+     ],
+     "lifecycle_state": [
+      "string",
+      "null"
+     ],
+     "charging_sub_sessions": "string",
+     "vehicle_model": "string",
+     "region": "string",
+     "connector_type": "string",
+     "source": [
+      "string",
+      "null"
+     ],
+     "confidence": [
+      "string",
+      "null"
+     ],
+     "verified_at": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#DELETE /evses/{evse_id}",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#GET /evses",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#GET /evses/{evse_id}",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#GET /vehicle_models/{vehicle_model_id}/connectors",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#GET /vehicle_models/{vehicle_model_id}/connectors/{region}",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#GET /vehicles/{vehicle_id}/connectors",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#PATCH /evses/{evse_id}",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#PATCH /vehicle_models/{vehicle_model_id}/connectors/{region}",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#PATCH /vehicles/{vehicle_id}/connectors",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#POST /vehicle_models/{vehicle_model_id}/connectors"
+    ]
+   },
+   "flipturn": {
+    "segments": [
+     "chargers"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "manufacturer": "string",
+     "model": "string",
+     "serialNumber": "string",
+     "firmwareVersion": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "externalId": "string",
+     "ocppId": "string",
+     "type": "string",
+     "networkServiceProvider": "string",
+     "chargerType": "string",
+     "numberOfPorts": "integer",
+     "powerSharing": "boolean",
+     "connectionStatus": "object",
+     "ports": "array"
+    },
+    "evidence": [
+     "openapi/_original/flipturn-openapi.yml#GET /chargers/{id}"
+    ]
+   },
+   "monta": {
+    "segments": [
+     "charge-points"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "state": "string",
+     "visibility": "string"
+    },
+    "evidence": [
+     "openapi/_original/monta-openapi.yml#GET /charge-points",
+     "openapi/_original/monta-openapi.yml#GET /charge-points/{id}"
+    ]
+   }
+  },
+  "charging_session": {
+   "cariqa": {
+    "segments": [
+     "charging-sessions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "start_time": "string",
+     "end_time": "string",
+     "duration": "integer",
+     "consumed_energy": "string",
+     "is_active": "boolean",
+     "evse_id": "string",
+     "station_info": null,
+     "is_partner": "boolean",
+     "logo_url": "string",
+     "user_facing_session_prices": null,
+     "session_cost": null,
+     "rates": null
+    },
+    "evidence": [
+     "openapi/_original/cariqa-openapi-original.yml#GET /api/v1/users/{user_id}/charging-sessions/",
+     "openapi/_original/cariqa-openapi-original.yml#GET /api/v1/users/{user_id}/charging-sessions/{session_id}/",
+     "openapi/_original/cariqa-openapi-original.yml#PATCH /api/v1/users/{user_id}/charging-sessions/{session_id}/"
+    ]
+   },
+   "chargefox": {
+    "segments": [
+     "sessions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "uuid": "string",
+     "auth_id": "string",
+     "location": "object",
+     "start_date_time": "string",
+     "stop_date_time": "string",
+     "total_time": "integer",
+     "consumption": "number",
+     "total_parking_time": "integer",
+     "total_revenue": "number",
+     "gst_on_total_revenue": "number",
+     "total_cost": "number",
+     "gst_on_total_cost": "number",
+     "currency": "string",
+     "charging_periods": "array"
+    },
+    "evidence": [
+     "openapi/_original/chargefox-fleets-api-openapi.json#GET /api/fleets/v1/sessions"
+    ]
+   },
+   "enode": {
+    "segments": [
+     "sessions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "kw": null,
+     "kwhSum": "number",
+     "price": null,
+     "costSum": "number",
+     "id": "string",
+     "locationId": "string",
+     "from": "string",
+     "to": "string",
+     "nonSmartPrice": null,
+     "estimatedSavings": "number"
+    },
+    "evidence": [
+     "openapi/_original/enode-openapi.json#GET /users/{userId}/statistics/charging/sessions"
+    ]
+   },
+   "enphase": {
+    "segments": [
+     "sessions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "start_time": "integer",
+     "end_time": "integer",
+     "duration": "integer",
+     "energy_added": "number",
+     "charge_time": "integer",
+     "miles_added": "number",
+     "cost": "number"
+    },
+    "evidence": [
+     "openapi/_original/enphase-monitoring-api-openapi.json#GET /api/v4/systems/{system_id}/ev_charger/{serial_no}/sessions"
+    ]
+   },
+   "ev-energy": {
+    "segments": [
+     "charging_sessions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "url": "string",
+     "start": "string",
+     "end": [
+      "string",
+      "null"
+     ],
+     "vehicle": null,
+     "evse": null,
+     "sub_sessions": null
+    },
+    "evidence": [
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#GET /charging_sessions",
+     "openapi/_original/ev-energy-api-v2-openapi.yaml#GET /charging_sessions/{charging_session_id}"
+    ]
+   },
+   "flipturn": {
+    "segments": [
+     "charging-sessions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "startTime": "string",
+     "endTime": "string",
+     "updatedAt": "string",
+     "durationSeconds": "integer",
+     "chargingStartTime": "string",
+     "chargingEndTime": "string",
+     "chargingDurationSeconds": "integer",
+     "socStartPercent": "number",
+     "socEndPercent": "number",
+     "energyDeliveredKwh": "number",
+     "averageDemandKw": "number",
+     "maxDemandKw": "number",
+     "ocppIdTag": "string",
+     "ocppTransactionId": "integer",
+     "tags": "array",
+     "site": "object",
+     "charger": "object",
+     "port": "object",
+     "vehicle": "object",
+     "rfid": "object",
+     "customer": "object",
+     "organization": "object"
+    },
+    "evidence": [
+     "openapi/_original/flipturn-openapi.yml#GET /charging-sessions"
+    ]
+   },
+   "plugsurfing": {
+    "segments": [
+     "sessions"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "balanceStatus": "string",
+     "sessionStatus": "string",
+     "charger": "object",
+     "balanceAmountMinor": "number",
+     "chargingKeyType": "string",
+     "connectorId": "string",
+     "duration": "string",
+     "energy": "object",
+     "paymentMethod": "string",
+     "price": "object",
+     "receiptAvailable": "boolean",
+     "sessionId": "string",
+     "site": "string",
+     "startTime": "string",
+     "transactions": "array"
+    },
+    "evidence": [
+     "openapi/_original/plugsurfing-reference-openapi.json#GET /drive/v1/users/{userId}/sessions/{sessionId}",
+     "openapi/_original/plugsurfing-reference-openapi.json#GET /emp/v1/sessions/{sessionId}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "1komma5",
+    "appyway",
+    "arcadia-power",
+    "axle-energy",
+    "benchmark-minerals",
+    "bmw-connecteddrive",
+    "bp",
+    "cariqa",
+    "chargefox",
+    "chargetrip",
+    "clevergy",
+    "con-edison",
+    "doe",
+    "edf-energy",
+    "einride",
+    "energy-utilities",
+    "enode",
+    "enphase",
+    "ev-energy",
+    "flipturn",
+    "gridx-ai",
+    "leap",
+    "leapfrog-power",
+    "monta",
+    "octopus-energy",
+    "openadr-alliance",
+    "openchargemap",
+    "plugsurfing",
+    "shell",
+    "shellrecharge",
+    "smartcar",
+    "span-io",
+    "tesla",
+    "tesla-motors",
+    "tibber",
+    "toyota",
+    "tronity",
+    "uk-power-networks",
+    "virtual-peaker",
+    "volteras"
+   ],
+   "kebab-case": [
+    "1komma5",
+    "axle-energy",
+    "benchmark-minerals",
+    "bp",
+    "cariqa",
+    "clevergy",
+    "doe",
+    "edf-energy",
+    "energy-utilities",
+    "enode",
+    "ev-energy",
+    "flipturn",
+    "gridx-ai",
+    "leap",
+    "leapfrog-power",
+    "monta",
+    "octopus-energy",
+    "plugsurfing",
+    "shellrecharge",
+    "smartcar",
+    "span-io",
+    "toyota",
+    "virtual-peaker",
+    "volteras"
+   ],
+   "other": [
+    "1komma5",
+    "appyway",
+    "einride",
+    "ev-energy",
+    "tesla",
+    "tesla-motors",
+    "uk-power-networks",
+    "volteras"
+   ],
+   "snake_case": [
+    "enphase",
+    "ev-energy",
+    "leap",
+    "leapfrog-power",
+    "tesla",
+    "tesla-motors",
+    "tronity"
+   ],
+   "camelCase": [
+    "appyway",
+    "arcadia-power",
+    "bmw-connecteddrive"
+   ],
+   "PascalCase": [
+    "con-edison"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "1komma5",
+    "axle-energy",
+    "bmw-connecteddrive",
+    "cariqa",
+    "clevergy",
+    "doe",
+    "edf-energy",
+    "einride",
+    "energy-utilities",
+    "enode",
+    "ev-energy",
+    "flipturn",
+    "gridx-ai",
+    "leap",
+    "leapfrog-power",
+    "monta",
+    "octopus-energy",
+    "plugsurfing",
+    "shellrecharge",
+    "smartcar",
+    "span-io",
+    "toyota",
+    "tronity",
+    "uk-power-networks",
+    "volteras"
+   ],
+   "camelCase": [
+    "1komma5",
+    "arcadia-power",
+    "bmw-connecteddrive",
+    "bp",
+    "clevergy",
+    "con-edison",
+    "doe",
+    "enode",
+    "gridx-ai",
+    "openadr-alliance",
+    "plugsurfing",
+    "shell",
+    "shellrecharge",
+    "span-io",
+    "tibber",
+    "toyota",
+    "tronity"
+   ],
+   "snake_case": [
+    "axle-energy",
+    "cariqa",
+    "doe",
+    "edf-energy",
+    "enphase",
+    "ev-energy",
+    "leap",
+    "leapfrog-power",
+    "octopus-energy",
+    "span-io",
+    "tesla",
+    "tesla-motors",
+    "uk-power-networks",
+    "volteras"
+   ],
+   "other": [
+    "einride",
+    "virtual-peaker"
+   ],
+   "kebab-case": [
+    "flipturn"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "1komma5",
+    "appyway",
+    "arcadia-power",
+    "axle-energy",
+    "bmw-connecteddrive",
+    "bp",
+    "cariqa",
+    "chargefox",
+    "clevergy",
+    "doe",
+    "edf-energy",
+    "einride",
+    "energy-utilities",
+    "enode",
+    "enphase",
+    "ev-energy",
+    "flipturn",
+    "gridx-ai",
+    "leap",
+    "leapfrog-power",
+    "monta",
+    "octopus-energy",
+    "openadr-alliance",
+    "openchargemap",
+    "plugsurfing",
+    "shell",
+    "shellrecharge",
+    "tesla",
+    "tesla-motors",
+    "tibber",
+    "toyota",
+    "uk-power-networks",
+    "virtual-peaker",
+    "volteras"
+   ],
+   "camelCase": [
+    "1komma5",
+    "appyway",
+    "arcadia-power",
+    "bmw-connecteddrive",
+    "bp",
+    "clevergy",
+    "con-edison",
+    "einride",
+    "enode",
+    "enphase",
+    "flipturn",
+    "gridx-ai",
+    "monta",
+    "openadr-alliance",
+    "plugsurfing",
+    "shell",
+    "toyota",
+    "volteras"
+   ],
+   "snake_case": [
+    "axle-energy",
+    "cariqa",
+    "chargefox",
+    "doe",
+    "edf-energy",
+    "enphase",
+    "ev-energy",
+    "gridx-ai",
+    "leap",
+    "leapfrog-power",
+    "octopus-energy",
+    "plugsurfing",
+    "span-io",
+    "uk-power-networks",
+    "volteras"
+   ],
+   "kebab-case": [
+    "con-edison",
+    "gridx-ai"
+   ],
+   "PascalCase": [
+    "bp"
+   ],
+   "other": [
+    "ev-energy"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "1komma5",
+    "arcadia-power",
+    "bp",
+    "cariqa",
+    "chargefox",
+    "clevergy",
+    "edf-energy",
+    "energy-utilities",
+    "enphase",
+    "ev-energy",
+    "gridx-ai",
+    "monta",
+    "octopus-energy",
+    "shell",
+    "toyota"
+   ],
+   "limit": [
+    "1komma5",
+    "axle-energy",
+    "clevergy",
+    "energy-utilities",
+    "enphase",
+    "ev-energy",
+    "flipturn",
+    "gridx-ai",
+    "openadr-alliance",
+    "plugsurfing",
+    "toyota",
+    "uk-power-networks"
+   ],
+   "page_size": [
+    "bp",
+    "cariqa",
+    "edf-energy",
+    "einride",
+    "enode",
+    "enphase",
+    "ev-energy",
+    "leap",
+    "leapfrog-power",
+    "octopus-energy",
+    "plugsurfing",
+    "shell"
+   ],
+   "offset": [
+    "axle-energy",
+    "doe",
+    "enphase",
+    "gridx-ai",
+    "toyota",
+    "uk-power-networks"
+   ],
+   "start": [
+    "doe",
+    "energy-utilities",
+    "ev-energy",
+    "gridx-ai",
+    "virtual-peaker"
+   ],
+   "page_token": [
+    "einride",
+    "leap",
+    "leapfrog-power",
+    "volteras"
+   ],
+   "size": [
+    "arcadia-power",
+    "clevergy",
+    "enphase"
+   ],
+   "cursor": [
+    "clevergy",
+    "plugsurfing"
+   ],
+   "skip": [
+    "einride",
+    "openadr-alliance"
+   ],
+   "per_page": [
+    "gridx-ai",
+    "monta"
+   ],
+   "after": [
+    "enode"
+   ],
+   "before": [
+    "enode"
+   ],
+   "next": [
+    "enphase"
+   ]
+  },
+  "property": {
+   "lower": [
+    "cariqa",
+    "chargefox",
+    "enode",
+    "enphase",
+    "ev-energy",
+    "flipturn",
+    "monta",
+    "plugsurfing"
+   ],
+   "snake_case": [
+    "cariqa",
+    "chargefox",
+    "enphase",
+    "ev-energy"
+   ],
+   "camelCase": [
+    "enode",
+    "flipturn",
+    "plugsurfing"
+   ]
+  }
+ }
+}

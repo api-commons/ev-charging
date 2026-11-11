@@ -1,0 +1,27 @@
+provider: ev-energy
+apis_io: https://apis.io/providers/ev-energy/
+context: ev-charging
+generated: '2026-11-10'
+concepts:
+  charger:
+    path_segment:
+    - connectors
+    - evses
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/ev-energy-api-v2-openapi.yaml#DELETE /evses/{evse_id}
+    - openapi/_original/ev-energy-api-v2-openapi.yaml#GET /evses
+    - openapi/_original/ev-energy-api-v2-openapi.yaml#GET /evses/{evse_id}
+    - openapi/_original/ev-energy-api-v2-openapi.yaml#GET /vehicle_models/{vehicle_model_id}/connectors
+    - openapi/_original/ev-energy-api-v2-openapi.yaml#GET /vehicle_models/{vehicle_model_id}/connectors/{region}
+  charging_session:
+    path_segment:
+    - charging_sessions
+    properties:
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/ev-energy-api-v2-openapi.yaml#GET /charging_sessions
+    - openapi/_original/ev-energy-api-v2-openapi.yaml#GET /charging_sessions/{charging_session_id}

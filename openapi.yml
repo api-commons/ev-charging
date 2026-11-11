@@ -1,0 +1,98 @@
+openapi: 3.1.0
+info:
+  title: EV Charging (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common EV Charging interface, distilled from the harvested OpenAPI of 41 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /chargers/{charger_id}:
+    parameters:
+    - $ref: '#/components/parameters/charger_id'
+    get:
+      operationId: getCharger
+      summary: Get a charger
+      tags:
+      - Chargers
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id001
+                $ref: '#/components/schemas/Charger'
+  /chargers:
+    get:
+      operationId: listChargers
+      summary: List chargers
+      tags:
+      - Chargers
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id001
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /charging-sessions:
+    get:
+      operationId: listChargingSessions
+      summary: List charging sessions
+      tags:
+      - Charging Sessions
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ChargingSession'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+components:
+  schemas:
+    Charger:
+      $ref: ./schema/charger.json
+    ChargingSession:
+      $ref: ./schema/charging_session.json
+  parameters:
+    charger_id:
+      name: charger_id
+      in: path
+      required: true
+      schema:
+        type: string
+    charging_session_id:
+      name: charging_session_id
+      in: path
+      required: true
+      schema:
+        type: string

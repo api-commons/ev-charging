@@ -1,0 +1,298 @@
+[
+ {
+  "slug": "1komma5",
+  "specs": [
+   "openapi/_original/1komma5-offer-tool-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "appyway",
+  "specs": [
+   "openapi/_original/appyway-availability-realtime-api-openapi.yml",
+   "openapi/_original/appyway-explorer-api-openapi.yml",
+   "openapi/_original/appyway-platform-api-openapi.yml",
+   "openapi/_original/appyway-traffic-data-api-openapi.yml",
+   "openapi/_original/availability-realtime-api-openapi.yml",
+   "openapi/_original/explorer-api-openapi.yml",
+   "openapi/_original/traffic-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "arcadia-power",
+  "specs": [
+   "openapi/_original/arcadia-power-openapi.json"
+  ]
+ },
+ {
+  "slug": "axle-energy",
+  "specs": [
+   "openapi/_original/axle-energy-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "benchmark-minerals",
+  "specs": [
+   "openapi/_original/benchmark-minerals-prices-api.yml",
+   "openapi/_original/benchmark-minerals-prices-api_2.yml"
+  ]
+ },
+ {
+  "slug": "bmw-connecteddrive",
+  "specs": [
+   "openapi/_original/bmw-cardata-customer-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "bp",
+  "specs": [
+   "openapi/_original/bp-fleet-aral-appconnect-openapi.json",
+   "openapi/_original/bp-fleet-authentication-openapi.json",
+   "openapi/_original/bp-fleet-card-management-openapi.json",
+   "openapi/_original/bp-fleet-invoice-management-openapi.json",
+   "openapi/_original/bp-fleet-retail-site-information-openapi.json",
+   "openapi/_original/bp-fleet-transaction-management-openapi.json"
+  ]
+ },
+ {
+  "slug": "cariqa",
+  "specs": [
+   "openapi/_original/cariqa-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "chargefox",
+  "specs": [
+   "openapi/_original/chargefox-fleets-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "chargetrip",
+  "specs": [
+   "openapi/_original/chargetrip-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clevergy",
+  "specs": [
+   "openapi/_original/clevergy-connect-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "con-edison",
+  "specs": [
+   "openapi/_original/con-edison-green-button-connect-my-data-swagger.json"
+  ]
+ },
+ {
+  "slug": "doe",
+  "specs": [
+   "openapi/_original/department-of-energy-co2-emissions-api-openapi.yml",
+   "openapi/_original/department-of-energy-eia-open-data-api-v2-api-openapi.yml",
+   "openapi/_original/department-of-energy-electricity-api-openapi.yml",
+   "openapi/_original/department-of-energy-international-api-openapi.yml",
+   "openapi/_original/department-of-energy-natural-gas-api-openapi.yml",
+   "openapi/_original/department-of-energy-nuclear-outages-api-openapi.yml",
+   "openapi/_original/department-of-energy-petroleum-api-openapi.yml",
+   "openapi/_original/department-of-energy-seriesid-api-openapi.yml",
+   "openapi/_original/department-of-energy-total-energy-api-openapi.yml",
+   "openapi/_original/eia-open-data-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "edf-energy",
+  "specs": [
+   "openapi/_original/edf-energy-kraken-data-import-openapi.yml",
+   "openapi/_original/edf-energy-kraken-openapi.yml"
+  ]
+ },
+ {
+  "slug": "einride",
+  "specs": [
+   "openapi/_original/einride-auth-openapi-original.yml",
+   "openapi/_original/einride-book-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "energy-utilities",
+  "specs": [
+   "openapi/_original/energy-utilities-openapi.yml"
+  ]
+ },
+ {
+  "slug": "enode",
+  "specs": [
+   "openapi/_original/enode-openapi.json"
+  ]
+ },
+ {
+  "slug": "enphase",
+  "specs": [
+   "openapi/_original/enphase-commissioning-api-openapi.json",
+   "openapi/_original/enphase-monitoring-api-openapi.json",
+   "openapi/_original/enphase-vpp-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "ev-connect",
+  "specs": [
+   "openapi/_original/ev-connect-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ev-energy",
+  "specs": [
+   "openapi/_original/ev-energy-api-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "flipturn",
+  "specs": [
+   "openapi/_original/flipturn-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gridx-ai",
+  "specs": [
+   "openapi/_original/gridx-ai-openapi.yml",
+   "openapi/_original/gridx-api.json"
+  ]
+ },
+ {
+  "slug": "leap",
+  "specs": [
+   "openapi/_original/leap-create-meters-openapi-original.yml",
+   "openapi/_original/leap-dispatching-openapi-original.yml",
+   "openapi/_original/leap-enrollments-openapi-original.yml",
+   "openapi/_original/leap-meters-openapi-original.yml",
+   "openapi/_original/leap-nominations-openapi-original.yml",
+   "openapi/_original/leap-settlement-openapi-original.yml",
+   "openapi/_original/leap-webhooks-openapi-original.yml",
+   "openapi/_original/leapfrog-power-group-dispatches-api-openapi.yml",
+   "openapi/_original/leapfrog-power-interval-data-upload-api-openapi.yml",
+   "openapi/_original/leapfrog-power-meter-dispatches-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "leapfrog-power",
+  "specs": [
+   "openapi/_original/leapfrog-power-create-meters-openapi.yml",
+   "openapi/_original/leapfrog-power-dispatch-openapi.yml",
+   "openapi/_original/leapfrog-power-interval-data-upload-openapi.json",
+   "openapi/_original/leapfrog-power-meter-details-openapi.yml",
+   "openapi/_original/leapfrog-power-meter-enrollment-openapi.yml",
+   "openapi/_original/leapfrog-power-nominations-openapi.yml",
+   "openapi/_original/leapfrog-power-revenue-analytics-openapi.yml",
+   "openapi/_original/leapfrog-power-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "monta",
+  "specs": [
+   "openapi/_original/monta-openapi.yml"
+  ]
+ },
+ {
+  "slug": "octopus-energy",
+  "specs": [
+   "openapi/_original/octopus-energy-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "openadr-alliance",
+  "specs": [
+   "openapi/_original/openadr-3-0-0-openapi.yaml",
+   "openapi/_original/openadr-3-0-1-openapi.yaml",
+   "openapi/_original/openadr-3-1-0-openapi.yaml",
+   "openapi/_original/openadr-3-1-1-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "openchargemap",
+  "specs": [
+   "openapi/_original/openapi.yaml"
+  ]
+ },
+ {
+  "slug": "plugsurfing",
+  "specs": [
+   "openapi/_original/plugsurfing-reference-openapi.json"
+  ]
+ },
+ {
+  "slug": "shell",
+  "specs": [
+   "openapi/_original/shell-b2b-mobility-openapi.yml",
+   "openapi/_original/shell-loyalty-openapi.yml",
+   "openapi/_original/shell-lubricants-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shellrecharge",
+  "specs": [
+   "openapi/_original/shellrecharge-openapi.yml"
+  ]
+ },
+ {
+  "slug": "smartcar",
+  "specs": [
+   "openapi/_original/smartcar-vehicles-openapi.yml"
+  ]
+ },
+ {
+  "slug": "span-io",
+  "specs": [
+   "openapi/_original/span-rest-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "tesla",
+  "specs": [
+   "openapi/_original/tesla-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "tesla-motors",
+  "specs": [
+   "openapi/_original/tesla-motors-owner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tibber",
+  "specs": [
+   "openapi/_original/tibber-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "toyota",
+  "specs": [
+   "openapi/_original/toyota-connected-services-openapi.yml",
+   "openapi/_original/toyota-telematics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tronity",
+  "specs": [
+   "openapi/_original/tronity-openapi.yml"
+  ]
+ },
+ {
+  "slug": "uk-power-networks",
+  "specs": [
+   "openapi/_original/uk-power-networks-explore-api-v2-0-openapi.json",
+   "openapi/_original/uk-power-networks-explore-api-v2-1-openapi.json"
+  ]
+ },
+ {
+  "slug": "virtual-peaker",
+  "specs": [
+   "openapi/_original/virtual-peaker-gravity-connect-device-partner-api-openapi.yml",
+   "openapi/_original/virtual-peaker-gravity-connect-vpp-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "volteras",
+  "specs": [
+   "openapi/_original/volteras-connect-openapi-original.json"
+  ]
+ }
+]
